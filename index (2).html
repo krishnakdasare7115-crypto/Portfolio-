@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krishna Dasare — Data Scientist</title>
+  <meta name="description" content="Professional portfolio for Krishna Dasare — Data Scientist." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071023 0%,#071733 60%)}
+    .container{max-width:980px;margin:36px auto;padding:24px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:24px;box-shadow:0 6px 24px rgba(2,6,23,0.6)}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:112px;height:112px;border-radius:12px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted);font-size:22px}
+    h1{margin:0;font-size:22px}
+    .headline{color:var(--muted);margin-top:4px}
+    .links{margin-left:auto;display:flex;gap:8px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.06);cursor:pointer}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#3b82f6);color:#021024;border:none}
+    section{margin-top:20px}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.02)}
+    .experience .item{padding:12px;border-radius:8px;background:rgba(255,255,255,0.01);margin-bottom:10px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+    @media(max-width:880px){.two-col{grid-template-columns:1fr} .links{margin-left:0}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar" id="avatar">KD</div>
+        <div>
+          <h1 id="name">Krishna Dasare</h1>
+          <div class="headline" id="headline">Data Scientist • Machine Learning • Analytics</div>
+          <div style="margin-top:8px;color:var(--muted);font-size:14px" id="location">Pune, India</div>
+        </div>
+        <div class="links">
+          <a class="btn" id="downloadCV" href="#" download="Krishna-Dasare-CV.pdf">Download CV</a>
+          <a class="btn primary" id="linkedinBtn" href="https://www.linkedin.com/in/krishna-dasare-249b8a327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">View LinkedIn</a>
+        </div>
+      </header>
+
+      <div class="two-col">
+        <main>
+          <section>
+            <h3>About</h3>
+            <p id="about">Data Scientist with hands-on experience in machine learning, data analysis, and storytelling with data. Experienced in Python, SQL, model building, and deploying end-to-end solutions. Passionate about turning data into actionable insights.</p>
+          </section>
+
+          <section class="experience">
+            <h3>Experience</h3>
+            <div class="item">
+              <strong id="exp1-role">Data Scientist — Example Company</strong>
+              <div style="color:var(--muted);font-size:13px" id="exp1-duration">Jan 2024 — Present</div>
+              <p id="exp1-desc">Worked on predictive modeling, feature engineering, A/B testing, and building dashboards to track metrics and KPIs.</p>
+            </div>
+
+            <div class="item">
+              <strong id="exp2-role">Data Analyst — Example Org</strong>
+              <div style="color:var(--muted);font-size:13px" id="exp2-duration">Jun 2022 — Dec 2023</div>
+              <p id="exp2-desc">Performed exploratory data analysis, wrote SQL queries, and automated reporting pipelines.</p>
+            </div>
+          </section>
+
+          <section>
+            <h3>Projects</h3>
+            <ul id="projects-list">
+              <li><strong>Customer Churn Model</strong> — Built and deployed a churn prediction model that improved retention by X%.</li>
+              <li><strong>Sales Forecasting</strong> — Time-series forecasting to predict monthly sales with confidence intervals.</li>
+            </ul>
+          </section>
+
+        </main>
+
+        <aside>
+          <section>
+            <h3>Skills</h3>
+            <div class="skills" id="skills">
+              <div class="skill">Python</div>
+              <div class="skill">Pandas</div>
+              <div class="skill">scikit-learn</div>
+              <div class="skill">SQL</div>
+              <div class="skill">Machine Learning</div>
+              <div class="skill">Data Visualization</div>
+            </div>
+          </section>
+
+          <section style="margin-top:12px">
+            <h3>Education</h3>
+            <div style="color:var(--muted);font-size:14px">B.Sc / M.Sc — University Name</div>
+          </section>
+
+          <section style="margin-top:12px">
+            <h3>Contact</h3>
+            <div style="color:var(--muted);font-size:14px">Email: <a href="mailto:your.email@example.com" id="email">your.email@example.com</a></div>
+            <div style="color:var(--muted);font-size:14px">Phone: <span id="phone">+91-XXXXXXXXXX</span></div>
+          </section>
+        </aside>
+      </div>
+
+      <footer>
+        <small>Generated from LinkedIn share link. Edit the page to replace placeholders with real details and projects. © Krishna Dasare</small>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Small client-side helper to allow easy editing of placeholders.
+    const profile = {
+      name: 'Krishna Dasare',
+      initials: 'KD',
+      headline: 'Data Scientist • Machine Learning • Analytics',
+      location: 'Pune, India',
+      about: 'Data Scientist with hands-on experience in machine learning, data analysis, and storytelling with data. Experienced in Python, SQL, model building, and deploying end-to-end solutions. Passionate about turning data into actionable insights.',
+      email: 'your.email@example.com',
+      phone: '+91-XXXXXXXXXX',
+      experiences: [
+        {role:'Data Scientist — Example Company', duration:'Jan 2024 — Present', desc:'Worked on predictive modeling and deployment.'},
+        {role:'Data Analyst — Example Org', duration:'Jun 2022 — Dec 2023', desc:'Exploratory analysis and reporting automation.'}
+      ],
+      projects: [
+        'Customer Churn Model — Built and deployed a churn prediction model.',
+        'Sales Forecasting — Time-series forecasting to predict monthly sales.'
+      ],
+      skills: ['Python','Pandas','scikit-learn','SQL','Machine Learning','Data Visualization']
+    }
+
+    document.getElementById('name').innerText = profile.name
+    document.getElementById('avatar').innerText = profile.initials
+    document.getElementById('headline').innerText = profile.headline
+    document.getElementById('location').innerText = profile.location
+    document.getElementById('about').innerText = profile.about
+    document.getElementById('email').href = 'mailto:' + profile.email
+    document.getElementById('email').innerText = profile.email
+    document.getElementById('phone').innerText = profile.phone
+
+    // Populate experiences and projects more dynamically if needed
+    const exp1 = profile.experiences[0]
+    document.getElementById('exp1-role').innerText = exp1.role
+    document.getElementById('exp1-duration').innerText = exp1.duration
+    document.getElementById('exp1-desc').innerText = exp1.desc
+    const exp2 = profile.experiences[1]
+    document.getElementById('exp2-role').innerText = exp2.role
+    document.getElementById('exp2-duration').innerText = exp2.duration
+    document.getElementById('exp2-desc').innerText = exp2.desc
+
+    const projList = document.getElementById('projects-list')
+    projList.innerHTML = ''
+    profile.projects.forEach(p=>{const li=document.createElement('li');li.innerText=p;projList.appendChild(li)})
+
+    const skillsNode = document.getElementById('skills')
+    skillsNode.innerHTML = ''
+    profile.skills.forEach(s=>{const d=document.createElement('div');d.className='skill';d.innerText=s;skillsNode.appendChild(d)})
+
+    // Helpful: let "Download CV" be a file upload replacement locally if user adds a PDF file named correctly.
+    document.getElementById('downloadCV').addEventListener('click', (e)=>{e.preventDefault(); alert('Place a file named "Krishna-Dasare-CV.pdf" in the same folder as this index.html to enable download, or change the href to a real CV URL.')} )
+  </script>
+</body>
+</html>
